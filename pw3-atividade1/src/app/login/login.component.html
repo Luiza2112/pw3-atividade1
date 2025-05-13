@@ -1,0 +1,13 @@
+<div class="login">
+  <form [formGroup]="loginForm">
+    <label for="nomeUsuario">Usuário: </label>
+    <input id="nomeUsuario" type="text" formControlName="nomeUsuario" class="nomeUsuarioInput"/>
+    <br/>
+    <label for="senha">Senha: </label>
+    <input id="senha" type="text" formControlName="senha" class="senhaInput"/>
+    <br/>
+    <button type="button" (click)="onAutenticar()">Autenticar</button>
+  </form>
+</div>
+
+<app-mensagem [tipo]="tipoMensagem" [nome]="nomeUser"></app-mensagem>
